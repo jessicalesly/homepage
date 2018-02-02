@@ -1,0 +1,56 @@
+/* Your button CSS code here */
+/* Feel free to use your own button CSS code (from previous challenge) */
+/* Here is a sample button design */
+
+.btn-green {
+  color: white;
+  padding: 25px 35px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 20px;
+  background: #6AD58B;
+  transition: background 0.3s ease;
+}
+.btn-green:hover {
+  background: #3ac162;
+  text-decoration: none;
+  color: white;
+}
+
+.btn-medium {
+  background-color: white;
+  border-style: solid;
+  border-radius: 50px;
+  border-width: 1px;
+  border-color: #999999;
+  color: #999999;
+  font-weight: 300;
+  padding: 15px 25px;
+}
+
+.btn-treehouse {
+  background-color: #69D68D;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  padding: 11px 22px;
+  margin :10px;
+}
+
+.btn-treehouse:hover {
+  background-color: #3ac266;
+}
+/*orange foncé : dd410b*/
+.btn-yours {
+  background-color: #ba1818;
+  box-shadow: 1px 0px 3px rgb(100, 100, 100);
+  border-radius: 25px;
+  color: white;
+  font-weight: bold;
+  padding: 15px 25px;
+  text-decoration: none;
+}
+
+.btn-yours:hover {
+  background-color: #900D0D;
+}
