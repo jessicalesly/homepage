@@ -26,6 +26,7 @@
   width: 400px;
   box-shadow: 2px 2px 2px 2px grey;
   transition: all 0.3 ease;
+  margin: 15px;
 }
 .card-body {
   color: white;
