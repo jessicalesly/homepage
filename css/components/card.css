@@ -23,7 +23,6 @@
   display: inline-block;
 }
 .card {
-  width: 400px;
   box-shadow: 2px 2px 2px 2px grey;
   transition: all 0.3 ease;
   margin: 15px;
@@ -74,8 +73,8 @@
   margin: 0px;
   color: rgb(100,100,100);
 }
-.cards {
+/*.cards {
   display: flex;
   justify-content: space-around;
   margin: 20px;
-}
+}*/
