@@ -24,7 +24,6 @@
 }
 .card {
   box-shadow: 2px 2px 2px 2px grey;
-  transition: all 0.3 ease;
   margin: 15px;
 }
 .card-body {
@@ -64,9 +63,9 @@
   justify-content: space-between;
   background-color: white;
 }
-.card:hover {
+/*.card:hover {
   margin-top: -5px;
-}
+}*/
 .card-date {
   flex: 0 0 60%;
   padding: 10px;
