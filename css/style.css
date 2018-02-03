@@ -2,13 +2,18 @@
 @import url("components/banner.css");
 @import url("components/avatar.css");
 @import url("components/card.css");
-@import url("layouts/cards_grid.css");
+@import url("components/footer.css");
+@import url("components/layouts/cards_grid.css");
 
 body {
   margin: 0;
-  margin-bottom: 100px;
+  /*margin-bottom: 100px;*/
   font-family: 'Varela Round', sans-serif;
 }
 .text-center {
   text-align: center;
+  margin: 0px;
+  padding-bottom: 10px;
 }
+
+

@@ -2,6 +2,7 @@
 .list-inline {
   padding: 0px;
   list-style: none;
+  margin: 0px;
 }
 
 .list-inline li {
@@ -31,7 +32,7 @@
   background-size: cover;
   background-position: center;
   position: relative;
-  height: 250px;
+  height: 275px;
 }
 .card-category {
   position: absolute;
@@ -63,9 +64,11 @@
   justify-content: space-between;
   background-color: white;
 }
-/*.card:hover {
-  margin-top: -5px;
-}*/
+.card:hover {
+  /*box-shadow: 2px 2px 2px 2px black;*/
+  box-shadow: 0.5em 0.5em .4em grey;
+  /*margin-top: -5px;*/
+}
 .card-date {
   flex: 0 0 60%;
   padding: 10px;
@@ -77,3 +80,16 @@
   justify-content: space-around;
   margin: 20px;
 }*/
+
+/*.card-picture:hover .card-hover {
+  opacity: 1;
+}*/
+
+.wrapper-cards {
+  background-color: #F4F4F4;
+  padding: 30px;
+}
+
+.wrapper-map {
+  margin: 30px 0px;
+}

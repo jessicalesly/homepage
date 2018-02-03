@@ -1,0 +1,9 @@
+footer {
+  background: #363636;
+  color: white;
+  height: 100px;
+}
+
+#list-inline footer {
+  color: white
+}

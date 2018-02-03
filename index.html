@@ -17,7 +17,27 @@
       </div>
     </div>
 
-    <div class="wrapper">
+    <!-- <div class="wrapper-icons">
+      <ul class="list-inline">
+        <li>
+          <img src="" alt="">
+          <h3>Smart</h3>
+          <p>nvlisglnsf</p>
+        </li>
+        <li>
+          <img src="" alt="">
+          <h3>Simple</h3>
+          <p>qlqbfi</p>
+        </li>
+        <li>
+          <img src="" alt="">
+          <h3>Fast</h3>
+          <p>didhd</p>
+        </li>
+      </ul>
+    </div> -->
+
+    <div class="wrapper-cards">
       <h2 class="text-center">What is your next festival?</h2>
       <div class="container">
         <div class="row">
@@ -38,9 +58,9 @@
                   <p class="card-date">Posted on 22/11/19</p>
                 <div class="card-links">
                   <ul class="list-inline">
-                    <li><a href = "https://www.linkedin.com/in/jessica-lesly-56413787/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                    <li><a href= ""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                    <li><a href= ""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href = "https://www.linkedin.com/in/jessica-lesly-56413787/"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                    <li><a href= ""><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href= ""><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
                   </ul>
                 </div>
               </div>
@@ -63,9 +83,9 @@
                   <p class="card-date">Posted on 20/10/18</p>
                 <div class="card-links">
                   <ul class="list-inline">
-                    <li><a href = "https://www.linkedin.com/in/jessica-lesly-56413787/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                    <li><a href= ""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                    <li><a href= ""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href = "https://www.linkedin.com/in/jessica-lesly-56413787/"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                    <li><a href= ""><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href= ""><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
                   </ul>
                 </div>
               </div>
@@ -88,9 +108,9 @@
                   <p class="card-date">Posted on 15/08/18</p>
                 <div class="card-links">
                   <ul class="list-inline">
-                    <li><a href = "https://www.linkedin.com/in/jessica-lesly-56413787/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                    <li><a href= ""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                    <li><a href= ""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href = "https://www.linkedin.com/in/jessica-lesly-56413787/"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                    <li><a href= ""><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href= ""><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
                   </ul>
                 </div>
               </div>
@@ -113,9 +133,9 @@
                   <p class="card-date">Posted on 20/10/18</p>
                 <div class="card-links">
                   <ul class="list-inline">
-                    <li><a href = "https://www.linkedin.com/in/jessica-lesly-56413787/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                    <li><a href= ""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                    <li><a href= ""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href = "https://www.linkedin.com/in/jessica-lesly-56413787/"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                    <li><a href= ""><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href= ""><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
                   </ul>
                 </div>
               </div>
@@ -126,5 +146,432 @@
       </div>
     </div>
 
+    <div id="map" style="width: 100%; height: 400px;"></div>
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+    <script type="text/javascript">
+    var myLatlng = new google.maps.LatLng(48.8655909, 2.378983);
+
+    var myOptions = {
+      zoom: 14,
+      center: myLatlng,
+      scrollwheel: false,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      styles: [
+        {
+                "featureType": "all",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                    {
+                        "color": "#052e60"
+                    },
+                    {
+                        "lightness": "-10"
+                    }
+                ]
+            },
+            {
+                "featureType": "all",
+                "elementType": "labels.text.stroke",
+                "stylers": [
+                    {
+                        "color": "#ffffff"
+                    }
+                ]
+            },
+            {
+                "featureType": "administrative.country",
+                "elementType": "geometry",
+                "stylers": [
+                    {
+                        "visibility": "on"
+                    }
+                ]
+            },
+            {
+                "featureType": "administrative.country",
+                "elementType": "geometry.stroke",
+                "stylers": [
+                    {
+                        "color": "#ffffff"
+                    }
+                ]
+            },
+            {
+                "featureType": "landscape.man_made",
+                "elementType": "all",
+                "stylers": [
+                    {
+                        "visibility": "off"
+                    }
+                ]
+            },
+            {
+                "featureType": "landscape.natural",
+                "elementType": "geometry.fill",
+                "stylers": [
+                    {
+                        "color": "#ebebeb"
+                    }
+                ]
+            },
+            {
+                "featureType": "landscape.natural",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                    {
+                        "color": "#393c3f"
+                    }
+                ]
+            },
+            {
+                "featureType": "landscape.natural",
+                "elementType": "labels.text.stroke",
+                "stylers": [
+                    {
+                        "lightness": "0"
+                    },
+                    {
+                        "gamma": "1.00"
+                    },
+                    {
+                        "color": "#ffffff"
+                    }
+                ]
+            },
+            {
+                "featureType": "poi",
+                "elementType": "labels.icon",
+                "stylers": [
+                    {
+                        "visibility": "off"
+                    }
+                ]
+            },
+            {
+                "featureType": "poi.attraction",
+                "elementType": "all",
+                "stylers": [
+                    {
+                        "visibility": "off"
+                    }
+                ]
+            },
+            {
+                "featureType": "poi.business",
+                "elementType": "all",
+                "stylers": [
+                    {
+                        "visibility": "off"
+                    }
+                ]
+            },
+            {
+                "featureType": "poi.government",
+                "elementType": "all",
+                "stylers": [
+                    {
+                        "visibility": "off"
+                    }
+                ]
+            },
+            {
+                "featureType": "poi.medical",
+                "elementType": "all",
+                "stylers": [
+                    {
+                        "visibility": "off"
+                    }
+                ]
+            },
+            {
+                "featureType": "poi.park",
+                "elementType": "all",
+                "stylers": [
+                    {
+                        "visibility": "on"
+                    }
+                ]
+            },
+            {
+                "featureType": "poi.park",
+                "elementType": "geometry.fill",
+                "stylers": [
+                    {
+                        "color": "#b0d691"
+                    }
+                ]
+            },
+            {
+                "featureType": "poi.park",
+                "elementType": "labels.icon",
+                "stylers": [
+                    {
+                        "visibility": "off"
+                    }
+                ]
+            },
+            {
+                "featureType": "poi.place_of_worship",
+                "elementType": "all",
+                "stylers": [
+                    {
+                        "visibility": "off"
+                    }
+                ]
+            },
+            {
+                "featureType": "poi.school",
+                "elementType": "all",
+                "stylers": [
+                    {
+                        "visibility": "off"
+                    }
+                ]
+            },
+            {
+                "featureType": "poi.sports_complex",
+                "elementType": "all",
+                "stylers": [
+                    {
+                        "visibility": "off"
+                    }
+                ]
+            },
+            {
+                "featureType": "road",
+                "elementType": "all",
+                "stylers": [
+                    {
+                        "saturation": "-100"
+                    },
+                    {
+                        "visibility": "on"
+                    }
+                ]
+            },
+            {
+                "featureType": "road",
+                "elementType": "geometry.stroke",
+                "stylers": [
+                    {
+                        "visibility": "on"
+                    }
+                ]
+            },
+            {
+                "featureType": "road",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                    {
+                        "color": "#052e60"
+                    }
+                ]
+            },
+            {
+                "featureType": "road.highway",
+                "elementType": "geometry.fill",
+                "stylers": [
+                    {
+                        "color": "#ffffff"
+                    }
+                ]
+            },
+            {
+                "featureType": "road.highway",
+                "elementType": "geometry.stroke",
+                "stylers": [
+                    {
+                        "lightness": "0"
+                    },
+                    {
+                        "weight": "0.50"
+                    },
+                    {
+                        "visibility": "off"
+                    }
+                ]
+            },
+            {
+                "featureType": "road.highway",
+                "elementType": "labels",
+                "stylers": [
+                    {
+                        "visibility": "on"
+                    }
+                ]
+            },
+            {
+                "featureType": "road.highway",
+                "elementType": "labels.icon",
+                "stylers": [
+                    {
+                        "visibility": "off"
+                    }
+                ]
+            },
+            {
+                "featureType": "road.highway.controlled_access",
+                "elementType": "geometry.fill",
+                "stylers": [
+                    {
+                        "color": "#ffffff"
+                    }
+                ]
+            },
+            {
+                "featureType": "road.highway.controlled_access",
+                "elementType": "geometry.stroke",
+                "stylers": [
+                    {
+                        "color": "#ffffff"
+                    },
+                    {
+                        "visibility": "off"
+                    }
+                ]
+            },
+            {
+                "featureType": "road.arterial",
+                "elementType": "labels.icon",
+                "stylers": [
+                    {
+                        "invert_lightness": true
+                    },
+                    {
+                        "saturation": "-7"
+                    },
+                    {
+                        "lightness": "3"
+                    },
+                    {
+                        "gamma": "1.80"
+                    },
+                    {
+                        "weight": "0.01"
+                    },
+                    {
+                        "visibility": "off"
+                    }
+                ]
+            },
+            {
+                "featureType": "road.local",
+                "elementType": "all",
+                "stylers": [
+                    {
+                        "visibility": "on"
+                    }
+                ]
+            },
+            {
+                "featureType": "road.local",
+                "elementType": "geometry.fill",
+                "stylers": [
+                    {
+                        "color": "#ffffff"
+                    }
+                ]
+            },
+            {
+                "featureType": "road.local",
+                "elementType": "labels.text.stroke",
+                "stylers": [
+                    {
+                        "weight": "3.00"
+                    }
+                ]
+            },
+            {
+                "featureType": "transit",
+                "elementType": "all",
+                "stylers": [
+                    {
+                        "visibility": "off"
+                    }
+                ]
+            },
+            {
+                "featureType": "transit.line",
+                "elementType": "geometry.fill",
+                "stylers": [
+                    {
+                        "visibility": "on"
+                    }
+                ]
+            },
+            {
+                "featureType": "transit.line",
+                "elementType": "geometry.stroke",
+                "stylers": [
+                    {
+                        "visibility": "on"
+                    }
+                ]
+            },
+            {
+                "featureType": "transit.station.bus",
+                "elementType": "labels.icon",
+                "stylers": [
+                    {
+                        "visibility": "off"
+                    }
+                ]
+            },
+            {
+                "featureType": "transit.station.rail",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                    {
+                        "visibility": "on"
+                    }
+                ]
+            },
+            {
+                "featureType": "transit.station.rail",
+                "elementType": "labels.icon",
+                "stylers": [
+                    {
+                        "visibility": "on"
+                    }
+                ]
+            },
+            {
+                "featureType": "water",
+                "elementType": "geometry.fill",
+                "stylers": [
+                    {
+                        "color": "#052e60"
+                    }
+                ]
+            },
+            {
+                "featureType": "water",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                    {
+                        "color": "#ffffff"
+                    }
+                ]
+            }
+      ] // TODO: replace [] with an array from https://snazzymaps.com/
+    };
+
+    var map = new google.maps.Map(document.getElementById('map'), myOptions);
+    var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: "You are here!"
+    });
+    </script>
+
   </body>
+  <footer>
+    <ul class="list-inline" id="list-inline-footer">
+      <li><a href = "https://www.linkedin.com/in/jessica-lesly-56413787/"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+      <li><a href= ""><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+      <li><a href= ""><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+    </ul>
+  </footer>
 </html>
