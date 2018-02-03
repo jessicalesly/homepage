@@ -63,4 +63,14 @@
 
 .btn-yours:hover {
   background-color: #900D0D;
+  text-decoration: none;
+  color: white;
+}
+
+.btn-big {
+  height: 50px;
+  width: 150px;
+  font-size: 10px;
+  display: inline-block;
+  text-align: center;
 }
